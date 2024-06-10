@@ -53,15 +53,17 @@
 				transform: none;
 			}
 		}
-		.about img {
-			float: right;
+		.about-container {
+			display: flex;
+			margin-left: 250px;
+			margin-right: 250px;
+			margin-top: 50px;
 		}
-		.about p {
-			float: left;
-			font-size: 20px;
+		.about-content {
+			font-size: 25px;
 		}
-		.about {
-			margin: 100px;
+		.about-picture {
+			padding-left: 200px;
 		}
 	</style>
 </head>
@@ -79,18 +81,23 @@
 			</div>
 		</div>
 		<!-- About Page -->
-		<div class="about">
-			<h1>Get quick, reliable service and repairs on your PC or Mac</h1>
-			<p>
+		<h1>Get quick, reliable service and repairs on your PC or Mac</h1>
+		<div class="about-container">
+			<div class="about-content">
+				<p>
+					<br>
+					We get it. Whether it’s for business or personal use, your computer is important to you. And you want to know
+					that the problem is going to be fixed – quickly and reliably. <br><br>
+					The experts at Federal Way PC Repairs offer friendly, timely repairs and service for your computer. We begin
+					with an in-depth diagnostic, and we keep you in the loop from start to finish. You’ll know what we’ve found,
+					how we intend to fix it and how much it will cost. Plus, we perform house calls, in which we come out
+					to your home or business. We want you to feel confident that your system is in good hands, and that it’s
+					coming back to you problem-free.
+				</p>
+			</div>
+			<div class="about-picture">
 				<img src="jeshoots-com-sMKUYIasyDM-unsplash.jpg" alt="Man Repairing PC" width="500" height="500">
-				We get it. Whether it’s for business or personal use, your computer is important to you. And you want to know
-				that the problem is going to be fixed – quickly and reliably. <br><br>
-				The experts at Federal Way PC Repairs offer friendly, timely repairs and service for your computer. We begin
-				with an in-depth diagnostic, and we keep you in the loop from start to finish. You’ll know what we’ve found,
-				how we intend to fix it and how much it will cost. Plus, we perform house calls, in which we come out
-				to your home or business. We want you to feel confident that your system is in good hands, and that it’s
-				coming back to you problem-free.
-			</p>
+			</div>
 		</div>
 	</body>
 </html>
