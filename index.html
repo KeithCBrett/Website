@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- TODO -->
+<!-- Prebuilt Page -->
+<!-- About Page -->
+	<!-- Fix Font Size -->
+	<!-- Make consistant on all screen sizes -->
+<!-- Contact Page -->
+<!-- Home Page -->
+<!-- TODO -->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+			font-family: Helvetica;
+		}
+		.navbar {
+			position: relative;
+			overflow: hidden;
+			background-color: #333;
+		}
+		.navbar a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.navbar a:hover {
+			background-color: #696969;
+		}
+		.middle-nav a {
+			float: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.right-nav {
+			float: right;
+		}
+		@media screen and (max-width: 600px) {
+			.navbar a, .right-nav {
+				float: none;
+				display: block;
+			}
+			.middle-nav a {
+				position: relative;
+				top: 0;
+				left: 0;
+				transform: none;
+			}
+		}
+	</style>
+</head>
+	<body>
+		<!-- Navbar -->
+		<div class="navbar">
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<div class="middle-nav">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="right-nav">
+				<a href="prebuilts.html">Prebuilts</a>
+				<a href="services.html">Services</a>
+			</div>
+		</div>
+	</body>
+</html>
