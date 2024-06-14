@@ -6,6 +6,7 @@
 	<!-- Make consistant on all screen sizes -->
 <!-- Contact Page -->
 <!-- Home Page -->
+    <!-- Fix styles for h1 and h2 -->
 <!-- TODO -->
 <html>
 <head>
@@ -70,10 +71,11 @@
             display: flex;
             margin-top: 25px;
             align-items: center;
+            margin-left: 2.6em;
         }
         .service-button {
             height: 50px;
-            background-color: #008AE0;
+            background-color: #1C26FF;
             border: 0px;
             color: white;
             font-weight: 600;
@@ -86,6 +88,17 @@
         .need-support-text {
             color: #0043E0;
             font-size: 16px;
+        }
+        .parent-container {
+            margin: 5.5em;
+        }
+        .index-h1 {
+            font-size: 5em;
+            color: #0043E0;
+        }
+        .index-h2 {
+            font-size: 2.5em;
+            color: #FF621C;
         }
     </style>
 </head>
@@ -102,26 +115,28 @@
                 <a href="services.html">Services</a>
             </div>
         </div>
-        <h1>
-            Federal Way PC Repairs, WA
-        </h1>
-        <h2>
-            Expert Computer Services & IT Solutions You Can Count On 
-        </h2>
-        <div class="form-btn-container">
-            <button class="service-button">
-                REQUEST A SERVICE
-            </button>
-            <div class="or-circle">
-                or
-            </div>
-            <div class="form-btn-text">
-                <p class="need-support-text" style="margin:0px;">
-                    Need Support? Call Us Now!
-                </p>
-                <p style="margin:8px;">
-                    (000) 111-2222
-                </p>
+        <div class="parent-container">
+            <h1 class="index-h1">
+                Federal Way<br> PC Repairs,<br> WA
+            </h1>
+            <h2 class="index-h2">
+                Expert Computer Services & IT <br> Solutions You Can Count On 
+            </h2>
+            <div class="form-btn-container">
+                <button class="service-button">
+                    REQUEST A SERVICE
+                </button>
+                <div class="or-circle">
+                    or
+                </div>
+                <div class="form-btn-text">
+                    <p class="need-support-text" style="margin:0px;">
+                        Need Support? Call Us Now!
+                    </p>
+                    <p style="margin:8px;">
+                        (000) 111-2222
+                    </p>
+                </div>
             </div>
         </div>
     </body>
