@@ -6,102 +6,144 @@
 	<!-- Make consistant on all screen sizes -->
 <!-- Contact Page -->
 <!-- Home Page -->
-    <!-- Fix styles for h1 and h2 -->
+    <!-- Create contact form -->
+        <!-- Add shadow to form -->
 <!-- TODO -->
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            margin: 0;
-            font-family: Helvetica;
-        }
-        .navbar {
-            position: relative;
-            overflow: hidden;
-            background-color: #333;
-        }
-        .navbar a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .navbar a:hover {
-            background-color: #696969;
-        }
-        .middle-nav a {
-            float: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .right-nav {
-            float: right;
-        }
-        @media screen and (max-width: 600px) {
-            .navbar a, .right-nav {
-                float: none;
-                display: block;
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                margin: 0;
+                font-family: Helvetica;
+            }
+            .navbar {
+                position: relative;
+                overflow: hidden;
+                background-color: #333;
+            }
+            .navbar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .navbar a:hover {
+                background-color: #696969;
             }
             .middle-nav a {
-                position: relative;
-                top: 0;
-                left: 0;
-                transform: none;
+                float: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-        }
-        .or-circle {
-            border-radius: 50%;
-            width: 20px;
-            height: 21px;
-            padding: 8px;
-            background: #fff;
-            border: 2px solid #666;
-            color: #666;
-            text-align: center;
-            font: 19px Arial, sans-serif;
-            margin: 5px 15px 5px 15px;
-            padding-bottom: 9px;
-        }
-        .form-btn-container {
-            display: flex;
-            margin-top: 25px;
-            align-items: center;
-            margin-left: 2.6em;
-        }
-        .service-button {
-            height: 50px;
-            background-color: #1C26FF;
-            border: 0px;
-            color: white;
-            font-weight: 600;
-        }
-        .form-btn-text {
-            text-align: center;
-            font-weight: bolder;
-            font-size: 20px;
-        }
-        .need-support-text {
-            color: #0043E0;
-            font-size: 16px;
-        }
-        .parent-container {
-            margin: 5.5em;
-        }
-        .index-h1 {
-            font-size: 5em;
-            color: #0043E0;
-        }
-        .index-h2 {
-            font-size: 2.5em;
-            color: #FF621C;
-        }
-    </style>
-</head>
+            .right-nav {
+                float: right;
+            }
+            @media screen and (max-width: 600px) {
+                .navbar a, .right-nav {
+                    float: none;
+                    display: block;
+                }
+                .middle-nav a {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    transform: none;
+                }
+            }
+            .or-circle {
+                border-radius: 50%;
+                width: 20px;
+                height: 21px;
+                padding: 8px;
+                background: #fff;
+                border: 2px solid #666;
+                color: #666;
+                text-align: center;
+                font: 19px Arial, sans-serif;
+                margin: 5px 15px 5px 15px;
+                padding-bottom: 9px;
+            }
+            .form-btn-container {
+                display: flex;
+                margin-top: 25px;
+                align-items: center;
+                margin-left: 2.6em;
+            }
+            .service-button {
+                height: 50px;
+                background-color: #1C26FF;
+                border: 0px;
+                color: white;
+                font-weight: 600;
+            }
+            .form-btn-text {
+                text-align: center;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .need-support-text {
+                color: #0043E0;
+                font-size: 16px;
+            }
+            .parent-container {
+                margin: 5.5em;
+            }
+            .index-h1 {
+                font-size: 5em;
+                color: #0043E0;
+            }
+            .index-h2 {
+                font-size: 2.4em;
+                color: #FF621C;
+                padding-right: 0em;
+                white-space: nowrap;
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            .index-form-container {
+                border-radius: 5px;
+                background-color: #e3f6ff;
+                padding: 20px;
+                margin: 5.5em;
+                margin-top: 10em;
+                padding-top: 5em;
+                padding-bottom: 10em;
+                box-shadow: 0.5px 0.5px 15px gray;
+            }
+            .flex-form-container {
+                display: flex;
+            }
+            .form-text-div {
+                text-align: center;
+                color: #FF621C;
+                font-size: 1.5em;
+                font-weight: bold;
+                padding-bottom: 3em;
+            }
+            .form-submit-btn {
+                display: block;
+                margin: auto;
+                background-color: #0398c9;
+                color: white;
+                padding: 15px;
+                margin-top: 3em;
+                border: none;
+            }
+        </style>
+    </head>
     <body>
         <!-- Navbar -->
         <div class="navbar">
@@ -115,30 +157,58 @@
                 <a href="services.html">Services</a>
             </div>
         </div>
-        <div class="parent-container">
-            <h1 class="index-h1">
-                Federal Way<br> PC Repairs,<br> WA
-            </h1>
-            <h2 class="index-h2">
-                Expert Computer Services & IT <br> Solutions You Can Count On 
-            </h2>
-            <div class="form-btn-container">
-                <button class="service-button">
-                    REQUEST A SERVICE
+        <div class="flex-form-container">
+            <div class="parent-container">
+                <h1 class="index-h1">
+                    Federal Way<br> PC Repairs,<br> WA
+                </h1>
+                <h2 class="index-h2">
+                    Expert Computer Services & IT <br> Solutions You Can Count On 
+                </h2>
+                <div class="form-btn-container">
+                    <button class="service-button">
+                        REQUEST A SERVICE
+                    </button>
+                    <div class="or-circle">
+                        or
+                    </div>
+                    <div class="form-btn-text">
+                        <p class="need-support-text" style="margin:0px;">
+                            Need Support? Call Us Now!
+                        </p>
+                        <p style="margin:8px;">
+                            (000) 111-2222
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="index-form-container">
+                <div class="form-text-div">Fill out our form to get started!</div>
+                <form action="/action_page.php">
+                    <label for="fname">
+                        First Name
+                    </label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter first name here">
+
+                    <label for="lname">
+                        Last Name
+                    </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter last name here">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+                    <input type="text" id="phone" name="phonenumber" placeholder="Enter phone number here">
+
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="text" id="email" name="useremail" placeholder="Enter email here">
+                </form>
+                <button class="form-submit-btn">
+                    SUBMIT
                 </button>
-                <div class="or-circle">
-                    or
-                </div>
-                <div class="form-btn-text">
-                    <p class="need-support-text" style="margin:0px;">
-                        Need Support? Call Us Now!
-                    </p>
-                    <p style="margin:8px;">
-                        (000) 111-2222
-                    </p>
-                </div>
             </div>
         </div>
     </body>
 </html>
-
