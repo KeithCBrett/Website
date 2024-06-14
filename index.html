@@ -9,64 +9,121 @@
 <!-- TODO -->
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		body {
-			margin: 0;
-			font-family: Helvetica;
-		}
-		.navbar {
-			position: relative;
-			overflow: hidden;
-			background-color: #333;
-		}
-		.navbar a {
-			float: left;
-			color: #f2f2f2;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 17px;
-		}
-		.navbar a:hover {
-			background-color: #696969;
-		}
-		.middle-nav a {
-			float: none;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-		.right-nav {
-			float: right;
-		}
-		@media screen and (max-width: 600px) {
-			.navbar a, .right-nav {
-				float: none;
-				display: block;
-			}
-			.middle-nav a {
-				position: relative;
-				top: 0;
-				left: 0;
-				transform: none;
-			}
-		}
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica;
+        }
+        .navbar {
+            position: relative;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #696969;
+        }
+        .middle-nav a {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .right-nav {
+            float: right;
+        }
+        @media screen and (max-width: 600px) {
+            .navbar a, .right-nav {
+                float: none;
+                display: block;
+            }
+            .middle-nav a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+        .or-circle {
+            border-radius: 50%;
+            width: 20px;
+            height: 21px;
+            padding: 8px;
+            background: #fff;
+            border: 2px solid #666;
+            color: #666;
+            text-align: center;
+            font: 19px Arial, sans-serif;
+            margin: 5px 15px 5px 15px;
+            padding-bottom: 9px;
+        }
+        .form-btn-container {
+            display: flex;
+            margin-top: 25px;
+            align-items: center;
+        }
+        .service-button {
+            height: 50px;
+            background-color: #008AE0;
+            border: 0px;
+            color: white;
+            font-weight: 600;
+        }
+        .form-btn-text {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .need-support-text {
+            color: #0043E0;
+            font-size: 16px;
+        }
+    </style>
 </head>
-	<body>
-		<!-- Navbar -->
-		<div class="navbar">
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-			<div class="middle-nav">
-				<a href="index.html">Home</a>
-			</div>
-			<div class="right-nav">
-				<a href="prebuilts.html">Prebuilts</a>
-				<a href="services.html">Services</a>
-			</div>
-		</div>
-	</body>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="middle-nav">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="right-nav">
+                <a href="prebuilts.html">Prebuilts</a>
+                <a href="services.html">Services</a>
+            </div>
+        </div>
+        <h1>
+            Federal Way PC Repairs, WA
+        </h1>
+        <h2>
+            Expert Computer Services & IT Solutions You Can Count On 
+        </h2>
+        <div class="form-btn-container">
+            <button class="service-button">
+                REQUEST A SERVICE
+            </button>
+            <div class="or-circle">
+                or
+            </div>
+            <div class="form-btn-text">
+                <p class="need-support-text" style="margin:0px;">
+                    Need Support? Call Us Now!
+                </p>
+                <p style="margin:8px;">
+                    (000) 111-2222
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
+
