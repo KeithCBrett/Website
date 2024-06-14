@@ -6,8 +6,6 @@
 	<!-- Make consistant on all screen sizes -->
 <!-- Contact Page -->
 <!-- Home Page -->
-    <!-- Create contact form -->
-        <!-- Add shadow to form -->
 <!-- TODO -->
 <html>
     <head>
@@ -73,6 +71,7 @@
                 margin-top: 25px;
                 align-items: center;
                 margin-left: 2.6em;
+                padding-bottom: 0px;
             }
             .service-button {
                 height: 50px;
@@ -91,7 +90,8 @@
                 font-size: 16px;
             }
             .parent-container {
-                margin: 5.5em;
+                margin: 15em;
+                margin-top: 7em;
             }
             .index-h1 {
                 font-size: 5em;
@@ -104,13 +104,15 @@
                 white-space: nowrap;
             }
             input[type=text], select, textarea {
+                margin: 0px;
                 width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
+                padding: 15px 15px 15px 20px;
+                border: 0px solid #ccc;
                 border-radius: 4px;
                 box-sizing: border-box;
                 margin-top: 6px;
                 margin-bottom: 16px;
+                margin-left: 0px;
                 resize: vertical;
             }
             .index-form-container {
@@ -118,13 +120,17 @@
                 background-color: #e3f6ff;
                 padding: 20px;
                 margin: 5.5em;
-                margin-top: 10em;
+                margin-right: 1em;
+                margin-top: 0em;
                 padding-top: 5em;
                 padding-bottom: 10em;
-                box-shadow: 0.5px 0.5px 15px gray;
+                padding-left: 5em;
+                padding-right: 5em;
+                box-shadow: 1px 1px 15px #E8E8E8;
             }
-            .flex-form-container {
+            .about-content-parent {
                 display: flex;
+                margin: 0px;
             }
             .form-text-div {
                 text-align: center;
@@ -141,6 +147,12 @@
                 padding: 15px;
                 margin-top: 3em;
                 border: none;
+            }
+            .elem1 {
+                margin-top: 0em;
+            }
+            .about-content-parent {
+                margin: 15em;
             }
         </style>
     </head>
@@ -182,28 +194,60 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="about-content-parent">
+            <div class="elem1">
+                <h1>
+                    IT Support Services in WA
+                </h1>
+                <h2>
+                    Computer Repairs & Tech Solutions in King County
+                </h2>
+                <p>
+                    In this modern world where technology plays a crucial role in our daily lives, it's refreshing to know that we have
+                    experts to turn to when things go awry. Federal Way Repairs is your one-stop shop for all your IT solutions and computer
+                    assistance needs. Whether you're a small business owner or a homeowner, we will come right to your address fully equipped
+                    to resolve your issue. With years of experience in the industry, we have earned the trust of our customers as a
+                    dependable and efficient service provider.
+                </p>
+                <p>
+                   When it comes to IT assistance, we know our stuff. Our expert computer repair experts in King County can provide a wide
+                   range of tech solutions. Some of these solutions include wireless networking, virus protection, computer repair, unstable
+                   WiFi recovery, data backup and recovery, and password security. We have the latest tools and techniques to diagnose and
+                   fix all kinds of tech problems. And the best part? We offer same-day, on-site services, so you won't have to wait too long
+                   to get your tech issues resolved. 
+                </p>
+                <h2>
+                    Local Tech Solutions At Your Service
+                </h2>
+                <p>
+                    Our services aim to make your life easier by providing hassle-free and prompt tech assistance. We believe that everyone
+                    should have access to quality tech support, regardless of their technical knowledge. That's why we make it our mission to
+                    provide reliable and affordable tech solutions to our customers. 
+                </p>
+            </div>
             <div class="index-form-container">
                 <div class="form-text-div">Fill out our form to get started!</div>
                 <form action="/action_page.php">
                     <label for="fname">
                         First Name
                     </label>
-                    <input type="text" id="fname" name="firstname" placeholder="Enter first name here">
+                    <input type="text" id="fname" name="firstname" placeholder=" ">
 
                     <label for="lname">
                         Last Name
                     </label>
-                    <input type="text" id="lname" name="lastname" placeholder="Enter last name here">
+                    <input type="text" id="lname" name="lastname" placeholder="">
 
                     <label for="phone">
                         Phone Number
                     </label>
-                    <input type="text" id="phone" name="phonenumber" placeholder="Enter phone number here">
+                    <input type="text" id="phone" name="phonenumber" placeholder="">
 
                     <label for="email">
                         Email
                     </label>
-                    <input type="text" id="email" name="useremail" placeholder="Enter email here">
+                    <input type="text" id="email" name="useremail" placeholder="">
                 </form>
                 <button class="form-submit-btn">
                     SUBMIT
