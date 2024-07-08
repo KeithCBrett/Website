@@ -79,11 +79,11 @@ body {
 .parent-container {
     margin: 7em 15em 1em 15em;
 }
-.index-h1 {
+h1 {
     font-size: 5em;
     color: #0043E0;
 }
-.index-h2 {
+h2 {
     font-size: 2.4em;
     color: #FF621C;
     padding-right: 0em;
