@@ -4,56 +4,6 @@ body {
 }
 
 
-.navbar {
-    position: relative;
-    overflow: hidden;
-    background-color: #333;
-}
-
-
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-.navbar a:hover {
-    background-color: #696969;
-}
-
-
-.middle-nav a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.right-nav {
-    float: right;
-}
-
-
-@media screen and (max-width: 600px) {
-    .navbar a, .right-nav {
-        float: none;
-        display: block;
-    }
-    .middle-nav a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-}
-
-
 .or-circle {
     border-radius: 50%;
     width: 20px;
@@ -490,3 +440,68 @@ input[type=text], select, textarea {
     width: 200px;
     height: 200px;
 }
+
+.navbar {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+}
+
+
+.navcol {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+
+.navrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.navcol a:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+
+.navcol a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0px;
+    font-size: 2em;
+}
+
+
+.navcart {
+    padding: 15px;
+    margin: 0px;
+    position: relative;
+    font-size: 2em;
+}
+
+
+.cart-amount {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+
+.navcart:hover {
+    padding-top: 15px;
+    margin: 0px;
+    background: white;
+    color: black;
+}
+
+
