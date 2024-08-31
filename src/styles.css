@@ -434,15 +434,16 @@ input[type=text], select, textarea {
 }
 
 
-
-
 .column img {
     width: 200px;
     height: 200px;
 }
 
+
 .navbar {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
     overflow: hidden;
     background-color: #333;
     color: white;
@@ -489,11 +490,16 @@ input[type=text], select, textarea {
     font-size: 2em;
 }
 
+.navcart:hover {
+    cursor: pointer;
+}
+
 
 .cart-amount {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 10px;
+    top: 5px;
+    font-size: 25px;
 }
 
 
@@ -505,3 +511,121 @@ input[type=text], select, textarea {
 }
 
 
+.prebuilt-tile-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 333px);
+    justify-content: center;
+    gap: 27px;
+}
+
+
+.prebuilt-header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 333px);
+    justify-content: center;
+    gap: 27px;
+}
+
+
+.prebuiltelem1 {
+    align-items: center;
+}
+
+
+.prebuilt-header1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: none;
+    background: #8AD5EB;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.elem1-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+.elem1-addtocart {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border: 1px solid gray;
+    border-radius: 0px 0px 15px 15px;
+    border-top: none;
+}
+
+
+.elem1-text {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    padding-top: 50px;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.elem1-image {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.elem1-addtocart button {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    font-size: 22px;
+    transition-duration: 0.2s;
+}
+
+
+.elem1-addtocart button:hover {
+    color: white;
+    background-color: #FF621C;
+    border: 1px solid #FF621C;
+    cursor: pointer;
+}
+
+
+.elem1-price {
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.bi-cart2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.bi-cart2:hover {
+    cursor: pointer;
+}
+
+
+.about-container {
+    margin: 7em 15em 1em 15em;
+}

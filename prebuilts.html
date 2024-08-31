@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
     <body>
@@ -26,8 +26,10 @@
                 </div>
                 <div class="navcol">
                     <div class="navcart">
-                        <i class="bi bi-cart2"></i>
-                        <div class="cart-amount">
+                        <div>
+                            <i class="bi bi-cart2" id="bi-cart2"></i>
+                        </div>
+                        <div class="cart-amount" id="cart-amount">
                             0
                         </div>
                     </div>
@@ -59,116 +61,11 @@
             <h2>
                 Prebuilts
             </h2>
-            <div class="row">
-                <div class="prebuilt1-column-header">
-                    <div class="prebuilt1-header">
-                        Standard
-                    </div>
-                </div>
-                <div class="prebuilt2-column-header">
-                    <div class="prebuilt2-header">
-                        Pro
-                    </div>
-                </div>
-                <div class="prebuilt3-column-header">
-                    <div class="prebuilt3-header">
-                        Extreme
-                    </div>
-                </div>
-                <div class="prebuilt4-column-header">
-                    <div class="prebuilt4-header">
-                        Elite
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="prebuilt1">
-                        <img src="Images/prebuilt1.png">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="prebuilt2">
-                        <img src="Images/prebuilt2.png">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="prebuilt3">
-                        <img src="Images/prebuilt3.png">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="prebuilt4">
-                        <img src="Images/prebuilt4.png">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="prebuilt1-text">
-                    OS: Windows 11
-                    <br>
-                    CPU: AMD Ryzen™ 5 7600 CPU
-                    <br>
-                    GPU: AMD Radeon RX 7600 - 8GB
-                </div>
-                <div class="prebuilt2-text">
-                    OS: Windows 11
-                    <br>
-                    CPU: AMD Ryzen™ 5 7600 CPU
-                    <br>
-                    GPU: AMD Radeon RX 7600 - 8GB
-                </div>
-                <div class="prebuilt3-text">
-                    OS: Windows 11
-                    <br>
-                    CPU: AMD Ryzen™ 5 7600 CPU
-                    <br>
-                    GPU: AMD Radeon RX 7600 - 8GB
-                </div>
-                <div class="prebuilt4-text">
-                    OS: Windows 11
-                    <br>
-                    CPU: AMD Ryzen™ 5 7600 CPU
-                    <br>
-                    GPU: AMD Radeon RX 7600 - 8GB
-                </div>
-            </div>
-            <div class="row">
-                <div class="prebuilt1-price">
-                    $1199
-                </div>
-                <div class="prebuilt2-price">
-                    $1649
-                </div>
-                <div class="prebuilt3-price">
-                    $2349
-                </div>
-                <div class="prebuilt4-price">
-                    $3329
-                </div>
-            </div>
-            <div class="row">
-                <div class="prebuilt-addtocart">
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div class="prebuilt-addtocart">
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div class="prebuilt-addtocart">
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
-                <div class="prebuilt-addtocart">
-                    <button>
-                        Add To Cart
-                    </button>
-                </div>
+            <div class="prebuilt-tile-wrapper" id="prebuilt-tiles">
+
             </div>
         </div>
     </body>
+    <script src="src/prebuilt_data.js"></script>
+    <script src="src/prebuilts.js"></script>
 </html>
