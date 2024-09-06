@@ -664,7 +664,7 @@ input[type=text], select, textarea {
 .checkout-h2 {
     display: grid;
     grid-template-columns: repeat(1, 1430px);
-    margin: 7em 15em 1em 15em;
+    justify-content: center;
     gap: 14px;
 }
 
