@@ -3,7 +3,7 @@ const prebuiltTilesData = [{
     header: "Standard",
     headerColor: "#87C591",
     img: "Images/prebuilt1.png",
-    text: "OS: Windows 11<br>CPU: AMD Ryzen 5<br>GPU: AMD Radeon 7600",
+    specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 5<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
     price: "$1199"
 },
@@ -12,7 +12,7 @@ const prebuiltTilesData = [{
     header: "Pro",
     headerColor: "#8AD5EB",
     img: "Images/prebuilt2.png",
-    text: "OS: Windows 11<br>CPU: AMD Ryzen 5<br>GPU: AMD Radeon 7600",
+    specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 7<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
     price: "$1649"
 
@@ -22,7 +22,7 @@ const prebuiltTilesData = [{
     header: "Extreme",
     headerColor: "#FF7BBD",
     img: "Images/prebuilt3.png",
-    text: "OS: Windows 11<br>CPU: AMD Ryzen 5<br>GPU: AMD Radeon 7600",
+    specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 9<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
     price: "$2349"
 },
@@ -31,7 +31,7 @@ const prebuiltTilesData = [{
     header: "Elite",
     headerColor: "#9E96F9",
     img: "Images/prebuilt4.png",
-    text: "OS: Windows 11<br>CPU: AMD Ryzen 5<br>GPU: AMD Radeon 7600",
+    specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 9<br><br>GPU: RTX 4090",
     button: "Add To Cart",
     price: "$3329"
 }];
