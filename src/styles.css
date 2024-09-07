@@ -680,20 +680,32 @@ input[type=text], select, textarea {
 
 
 .checkoutCartSpecs {
-    padding-top: 70px;
-    margin-left: 70px;
-    margin-right: 50px;
-    overflow: hidden;
-    padding-right: 20px;
-    width: 35%;
+    padding-left: 100px;
+    width: 20%;
+    align-self: center;
 }
 
 
 .checkoutCartImg {
     padding-left: 20px;
+    align-self: center;
 }
 
 
 .checkoutCartNumItems {
-    padding-top: 106px;
+    align-self: center;
+    font-weight: bold;
+    padding-left: 150px;
 }
+
+
+.checkoutCartTrashIcon {
+    font-size: 50px;
+    align-self: center;
+    padding-left: 250px;
+}
+
+
+
+
+

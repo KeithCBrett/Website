@@ -1,12 +1,41 @@
 // Get cart from local storage
-const cart = JSON.parse(localStorage.getItem("data")) || [];
+let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 
 // For generating html in checkout.html
 const checkoutWrapper = document.getElementById("checkout-h1");
-const otherCheckoutWrapper = document.getElementById("checkout-h2");
+let otherCheckoutWrapper = document.getElementById("checkout-h2");
 const totalWrapper = document.getElementById("total");
 
+
+const decrement = (id) => {
+    let cartItem = cart.find((x) => x.id == id);
+
+    if (cartItem == undefined) {
+        return;
+    } else if (cartItem.numItem == 0) {
+        return;
+    } else if (cartItem.numItem == 1) {
+        cartItem.numItem--;
+        location.reload();
+    } else {
+        cartItem.numItem--;
+    }
+
+    updateNumItems(id);
+    updateNavCart();
+    cart = cart.filter((x) => x.numItem != 0);
+    spawnCheckout();
+    localStorage.setItem("data", JSON.stringify(cart));
+};
+
+
+const updateNumItems = (id) => {
+    let currItem = cart.find((x) => x.id == id);
+    document.getElementById(id).innerHTML = currItem.numItem;
+    updateNavCart();
+    spawnCheckout();
+};
 
 const updateNavCart = () => {
     const cartAmount = document.getElementById("cart-amount");
@@ -17,9 +46,10 @@ const updateNavCart = () => {
         cartAmount.setAttribute("style", "right:-2px;");
     }
     cartAmount.innerHTML = total;
-}
+    spawnCheckout();
+};
 
-
+ 
 const spawnCheckout = () => {
     if (cart.length == 0) {
         otherCheckoutWrapper = ``;
@@ -31,7 +61,7 @@ const spawnCheckout = () => {
     } else {
         return (otherCheckoutWrapper.innerHTML = cart.map((x) => {
             const {id, numItem} = x;
-            const cartItem = prebuiltTilesData.find((y) => y.id == id) || [];
+            let cartItem = prebuiltTilesData.find((y) => y.id == id) || [];
             return `
             <div class="checkoutCartItem">
                 <div class="checkoutCartImg">
@@ -41,13 +71,16 @@ const spawnCheckout = () => {
                     ${cartItem.specs}
                 </div>
                 <div id="${id}" class="checkoutCartNumItems">
-                    quantity: ${numItem}
+                    Quantity: ${numItem}
+                </div>
+                <div onclick="decrement('${id}')" class="checkoutCartTrashIcon">
+                    <i class="bi bi-trash3"></i>
                 </div>
             </div>
             `;
         }).join(""));
     }
-}
+};
 
 
 const spawnTotal = () => {
@@ -56,7 +89,7 @@ const spawnTotal = () => {
         Estimated Total: 
     </div>
     `;
-}
+};
 
 
 updateNavCart();

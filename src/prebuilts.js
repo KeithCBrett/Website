@@ -3,15 +3,15 @@ const cart = JSON.parse(localStorage.getItem("data")) || [];
 
 
 const increment = (id) => {
-    const searchCart = cart.find((x) => x.id == id);
+    const cartItem = cart.find((x) => x.id == id);
 
-    if(searchCart == undefined) {
+    if(cartItem == undefined) {
         cart.push({
             id: id,
             numItem: 1
         });
     } else {
-        searchCart.numItem++;
+        cartItem.numItem++;
     }
 
     updateNavCart();
@@ -19,6 +19,22 @@ const increment = (id) => {
     // cart = cart.filter((x) => x.numItems != 0);
     localStorage.setItem("data", JSON.stringify(cart));
 };
+
+
+const decrement = (id) => {
+    const cartItem = cart.find((x) => x.id == id);
+
+    if (cartItem == undefined) {
+        return;
+    } else if (cartItem.numItem == 0) {
+        return;
+    } else {
+        cartItem--;
+    }
+
+    updateNavCart();
+    localStorage.setItem("data", JSON.stringify(cart));
+}
 
 
 const updateNavCart = () => {
