@@ -663,8 +663,8 @@ input[type=text], select, textarea {
 
 .checkout-h2 {
     display: grid;
-    grid-template-columns: repeat(1, 1430px);
     justify-content: center;
+    grid-template-columns: repeat(1, 1430px);
     gap: 14px;
 }
 
@@ -706,6 +706,7 @@ input[type=text], select, textarea {
 }
 
 
-
-
-
+.total {
+    display: grid;
+    justify-content: center;
+}

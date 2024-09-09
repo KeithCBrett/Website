@@ -8,6 +8,20 @@ let otherCheckoutWrapper = document.getElementById("checkout-h2");
 const totalWrapper = document.getElementById("total");
 
 
+const calculateTotal = () => {
+    if (cart.length !== 0) {
+        const total = cart.map((x) => {
+            const {numItem, id} = x;
+            const cartItem = prebuiltTilesData.find((y) => y.id == id) || [];
+            return numItem * cartItem.price;
+        }).reduce((x, y) => x + y, 0);
+        totalWrapper.innerHTML = `
+        <h2>Estimated Total = $${total}</h2>
+        `;
+    };
+}
+
+
 const decrement = (id) => {
     let cartItem = cart.find((x) => x.id == id);
 
@@ -15,7 +29,7 @@ const decrement = (id) => {
         return;
     } else if (cartItem.numItem == 0) {
         return;
-    } else if (cartItem.numItem == 1) {
+    } else if ((cartItem.numItem == 1) && (cart.length == 1)) {
         cartItem.numItem--;
         location.reload();
     } else {
@@ -26,6 +40,7 @@ const decrement = (id) => {
     updateNavCart();
     cart = cart.filter((x) => x.numItem != 0);
     spawnCheckout();
+    calculateTotal();
     localStorage.setItem("data", JSON.stringify(cart));
 };
 
@@ -83,15 +98,10 @@ const spawnCheckout = () => {
 };
 
 
-const spawnTotal = () => {
-    totalWrapper.innerHTML = `
-    <div class="checkout-total">
-        Estimated Total: 
-    </div>
-    `;
-};
 
 
 updateNavCart();
 spawnCheckout();
-spawnTotal();
+if (cart.length > 0) {
+    calculateTotal();
+};

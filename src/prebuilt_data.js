@@ -5,7 +5,7 @@ const prebuiltTilesData = [{
     img: "Images/prebuilt1.png",
     specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 5<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
-    price: "$1199"
+    price: "1199"
 },
 {
     id: "adsfaww",
@@ -14,7 +14,7 @@ const prebuiltTilesData = [{
     img: "Images/prebuilt2.png",
     specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 7<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
-    price: "$1649"
+    price: "1649"
 
 },
 {
@@ -24,7 +24,7 @@ const prebuiltTilesData = [{
     img: "Images/prebuilt3.png",
     specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 9<br><br>GPU: AMD Radeon 7600",
     button: "Add To Cart",
-    price: "$2349"
+    price: "2349"
 },
 {
     id: "joihhjbub",
@@ -33,6 +33,6 @@ const prebuiltTilesData = [{
     img: "Images/prebuilt4.png",
     specs: "OS: Windows 11<br><br>CPU: AMD Ryzen 9<br><br>GPU: RTX 4090",
     button: "Add To Cart",
-    price: "$3329"
+    price: "3329"
 }];
 

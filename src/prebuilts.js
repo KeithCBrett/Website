@@ -8,15 +8,13 @@ const increment = (id) => {
     if(cartItem == undefined) {
         cart.push({
             id: id,
-            numItem: 1
+            numItem: 1,
         });
     } else {
         cartItem.numItem++;
     }
 
     updateNavCart();
-
-    // cart = cart.filter((x) => x.numItems != 0);
     localStorage.setItem("data", JSON.stringify(cart));
 };
 
@@ -29,12 +27,12 @@ const decrement = (id) => {
     } else if (cartItem.numItem == 0) {
         return;
     } else {
-        cartItem--;
+        cartItem.numItem--;
     }
 
     updateNavCart();
     localStorage.setItem("data", JSON.stringify(cart));
-}
+};
 
 
 const updateNavCart = () => {
@@ -46,7 +44,7 @@ const updateNavCart = () => {
     }
 
     cartAmount.innerHTML = total;
-}
+};
 
 
 const spawnPrebuiltTiles = () => {
